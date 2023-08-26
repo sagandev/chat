@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             } else {
                 try {
                     $query = $db->prepare("UPDATE bot_settings SET bot_name = ? WHERE id = 1");
-                    $query->execute([$bot_name]);
+                    $query->execute([$name]);
                     echo json_encode(array("success"=> true, "msg"=> "Bot name has been changed successfully"));
                 } catch(PDOException $e) {
                     echo json_encode(array("success"=> false, "msg"=> $e->getMessage()));

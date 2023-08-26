@@ -119,7 +119,7 @@ if ($query->rowCount() >= 1) {
                             <input type='hidden' name="token" value="<?php echo $_SESSION['session_auth_token'] ?>">
                             <input type="hidden" name="rowId" value="">
                             <span>
-                                Available variables: <span class='text-warning rounded-2 w-auto m-0'>{time}, {date}, {day}, {weather}</span></span>
+                                Available variables: <span class='text-warning rounded-2 w-auto m-0'>{name}, {time}, {date}, {day}, {weather}</span></span>
                         </form>
                     </div>
                     <div class="modal-footer">

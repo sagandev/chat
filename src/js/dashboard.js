@@ -143,6 +143,7 @@ $("#edit_bot_name").submit(function (e) {
   e.preventDefault();
   const botName = $(this).find("input[name='botName']").val();
   $.post('./src/bot_settings.php', { bot_name: botName, token: $(this).find("input[name='token']").val() }).done((res) => {
+    console.log(res)
     const data = JSON.parse(res);
     if (data.success == true) {
       showAlert('success', data.msg);
