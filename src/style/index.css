@@ -1,0 +1,51 @@
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-window {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+.alert {
+    position: absolute;
+    top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .chat-window .response {
+        width: 100% !important;
+    }
+
+    .response-container {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .chat-window .response {
+        width: 100% !important;
+    }
+
+    .response-container {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .chat-window .response {
+        width: 50% !important;
+    }
+}
