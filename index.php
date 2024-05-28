@@ -14,7 +14,7 @@
 
 <body>
     <div class="container p-2 d-flex justify-content-center align-items-center h-100 max-vh-100 min-vw-100">
-        <div class="rounded-2 d-flex flex-column w-50 h-100 align-items-start border border-1 chat-window">
+        <div class="rounded-2 d-flex flex-column h-100 align-items-start border border-1 chat-window">
             <div class="bg-dark-subtle p-2 rounded-top w-100 border-bottom d-flex justify-content-between align-items-center">
                 <span class='fs-5'>Chat with <span class='bot_name'></span></span>
                 <a href='dashboard.php' class='btn btn-dark'><i class="bi bi-box-arrow-in-right"></i></a>

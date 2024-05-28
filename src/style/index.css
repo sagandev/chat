@@ -14,9 +14,10 @@ body {
     align-items: center;
 }
 
-#chat-window {
+.chat-window {
     scroll-behavior: smooth;
     transition: 1s;
+    width: 100vh
 }
 
 .alert {

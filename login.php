@@ -25,7 +25,7 @@
     <?php
     session_start();
     if (isset($_SESSION['error'])) {
-        echo "<script>showAlert('{$_SESSION['error']}');</script>";
+        echo "<script>showAlert('danger','{$_SESSION['error']}');</script>";
     }
     ?>
 </body>

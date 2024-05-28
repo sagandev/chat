@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.get('./src/get_name.php').done((data) => localStorage.setItem('bot_name', data));
+    $.get('./src/get_name.php').done((data) => {localStorage.setItem('bot_name', data); console.log(data)});
     $(".bot_name").map(function () {
         this.innerHTML = localStorage.getItem('bot_name');
     })

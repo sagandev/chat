@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($query->rowCount() == 1) {
         $res = $query->fetch(PDO::FETCH_ASSOC);
         $verify = password_verify($password, $res['password']);
-        if ($verify == true) {
+        if ($verify) {
             $_SESSION['session_auth_token'] = hash('sha256', bin2hex(random_bytes(64)));
             $_SESSION['user']['username'] = $res['username'];
             header("location: ../dashboard.php");

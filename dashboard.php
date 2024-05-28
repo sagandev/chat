@@ -39,7 +39,7 @@ if ($query->rowCount() >= 1) {
                 <thead>
                     <tr>
                         <th>Index</th>
-                        <th>Querstion</th>
+                        <th>Question</th>
                         <th>Answer</th>
                         <th>Action</th>
                     </tr>
@@ -52,7 +52,7 @@ if ($query->rowCount() >= 1) {
                                 . "<td>{$_SESSION['qna'][$i]['id']}</td>"
                                 . "<td>{$_SESSION['qna'][$i]['query']}</td>"
                                 . "<td>{$_SESSION['qna'][$i]['reply']}</td>"
-                                . "<td><button class='btn btn-success me-1' name='edit' id='{$_SESSION['qna'][$i]['id']}'><i class='i bi-pencil-square'></i></button>"
+                                . "<td><button class='btn btn-success me-1 mb-1' name='edit' id='{$_SESSION['qna'][$i]['id']}'><i class='i bi-pencil-square'></i></button>"
                                 . "<button class='btn btn-danger' name='delete' id='{$_SESSION['qna'][$i]['id']}'><i class='bi bi-x-circle'></i></button>"
                                 . "</td></tr>";
                         }
